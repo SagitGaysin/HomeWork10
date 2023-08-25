@@ -37,7 +37,11 @@ public class Main {
          */
 
         String fullName = "Ivanov Ivan Ivanovich";
-        System.out.println("Данные ФИО сотрудника для заполнения отчета - " + fullName.toUpperCase());
+        String upperName = fullName.toUpperCase();
+        System.out.println("Данные ФИО сотрудника для заполнения отчета - " + upperName);
+        //System.out.println("Данные ФИО сотрудника для заполнения отчета - " + fullName.toUpperCase())
+        // В первый раз решил таким способом, на разборе увидел, что надо было отдельно инициализировать метод.
+        // Не критично же вызывать метод в скобках вывода, имею ввиду внутри system.out.println
     }
     public static void task3() {
         System.out.println("\n Задача 3");
@@ -48,6 +52,9 @@ public class Main {
 Выведите результат программы в консоль в формате: «Данные ФИО сотрудника — ...».
          */
         String fullName = "Иванов Семён Семёнович";
-        System.out.println("Данные ФИО сотрудника — " + fullName.replace("ё", "е"));
+        String replaceName = fullName.replace("ё", "е");
+        System.out.println("Данные ФИО сотрудника — " + replaceName);
+        //Здесь такая же ситуация. Также переделал с вынесением вызова метода в отдельную строку.
+        // Так понимаю, что нежелательно вызывать метод в скобках вывода
     }
 }
